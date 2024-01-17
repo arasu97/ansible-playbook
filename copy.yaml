@@ -1,0 +1,10 @@
+---
+   - name: copy the file
+     hosts: "*"
+     become: yes
+     become_user: root  
+     tasks:
+       - name: copy
+         copy:
+           src: thiru.txt
+           dest: /home/ubuntu  
