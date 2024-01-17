@@ -1,0 +1,5 @@
+---
+   - name: first playbook
+     hosts: "*"
+     tasks:
+       - action: ping
