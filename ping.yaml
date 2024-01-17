@@ -1,5 +1,7 @@
 ---
-   - name: first playbook
+   - name: ping
      hosts: "*"
+     become: yes
+     become_user: root  
      tasks:
        - action: ping
